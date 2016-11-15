@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+    <LinearLayout
+        android:id="@+id/ll_lay_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:gravity="center" >
+    </LinearLayout>
+    -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbar"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_smart_scrutiny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:drawableLeft="@drawable/ic_action_search"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="5dp"
+            android:gravity="right" >
+            
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                android:background="@drawable/selector_menu_button"
+                android:text="Back"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+            
+             <TextView
+                android:id="@+id/tv_unread_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/selector_menu_button"
+                android:drawableTop="@drawable/answerbooknotread"
+                android:gravity="center_horizontal"
+                android:text="Unreadable\n barcode "
+                android:textColor="@color/white" />
+
+              <TextView
+                 android:id="@+id/tv_mismatch_barcode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/selector_menu_button"
+                android:drawableTop="@drawable/ic_script_mismatch"
+                android:gravity="center_horizontal"
+                android:text="Script Mismatch"
+                android:visibility="gone"
+                android:textColor="@color/white" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_h_seatno"
+            style="@style/textview_marks_show_details_title"
+            android:layout_alignParentLeft="true"
+            android:text="Seat No :  " />
+
+        <TextView
+            android:id="@+id/tv_seat_no"
+            style="@style/textview_marks_show_details"
+            android:layout_toRightOf="@+id/tv_h_seatno"
+            android:textColor="@color/blue"
+            android:text=""
+             />
+
+        
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" 
+        android:background="@color/white">
+        
+        
+
+        <ImageView
+            android:id="@+id/loginImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="30dp"
+            android:src="@drawable/barcode" />
+
+        <!-- <EditText
+            android:id="@+id/et_serial_no"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/txt_field"
+            android:hint="@string/enter_answer_book_serial_no"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="@dimen/text_size" >
+
+            
+        </EditText> -->
+<EditText
+            android:id="@+id/WriteSerialNumberTextView1"
+            android:layout_width="340dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:hint="Enter Book Serial Number"
+            android:maxLength="2"
+            android:textSize="@dimen/text_size" 
+            android:imeOptions="actionDone"
+            android:inputType="number"
+           android:background="@drawable/txt_field"
+             />
+        <EditText
+            android:id="@+id/et_scanbook"
+            android:layout_width="420dp"
+            android:layout_height="60dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/txt_field"
+            android:hint="@string/scan_answer_book"
+            android:inputType="numberPassword"
+            android:maxLength="11"
+            android:paddingLeft="20dp"
+            android:textSize="@dimen/text_size" >
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_scanbook_submit"
+            style="@style/button_style"
+            android:layout_width="420dp"
+            android:layout_height="60dip"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Submit" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blue">#01405b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="state_blue">#33b5e5</color>
+    <color name="skyblue">#87CEFA</color>
+    <color name="black">#000</color>
+    <!-- <color name="light_blue2">#ADD8E6</color> -->
+    <color name="light_grey">#C0C0C0</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="red">#FF0000</color>
+    <color name="orange">#FF8D00</color>
+    <color name="green">#058900</color>
+</resources>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_bundle_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/txt_field"
+        android:hint="Enter the bundle to be updated"
+        android:inputType="textCapCharacters"
+        android:minWidth="250dp"
+        android:padding="10dp"
+        android:maxLength="11"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_update_bundle"
+        style="@style/btnStyleBlue"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:text="@string/update_settings" >
+    </Button>
+
+    <Button
+        android:id="@+id/btn_updateimei"
+        style="@style/btnStyleBlue"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dip"
+        android:text="Update IMEI" />
+    
+    <TextView
+        android:id="@+id/tv_update_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>

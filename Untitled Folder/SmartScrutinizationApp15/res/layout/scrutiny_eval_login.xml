@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dip"
+        android:text="Mode : "
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size" />
+     <TextView
+        android:id="@+id/tv_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size" />
+     </LinearLayout>
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_h_seatno"
+            style="@style/textview_marks_show_details_title"
+            android:layout_alignParentLeft="true"
+            android:text="Seat No :  " />
+
+        <TextView
+            android:id="@+id/tv_seat_no"
+            style="@style/textview_marks_show_details"
+            android:layout_toRightOf="@+id/tv_h_seatno"
+            android:textColor="@color/blue"
+            android:text=""
+             />
+
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/loginImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lock" />
+
+        <TextView
+            style="@style/textview_style"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:gravity="center"
+            android:text="@string/app_name" >
+        </TextView>
+
+        <EditText
+            style="@style/edittext_style2"
+            android:id="@+id/et_eval_id"
+            android:layout_width="300dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:hint="@string/enter_evaluator_id"
+             android:singleLine="true"
+                android:maxLength="10"
+            android:inputType="textCapCharacters">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/button_style"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top"
+            android:text="Submit" />
+    </LinearLayout>
+
+</LinearLayout>

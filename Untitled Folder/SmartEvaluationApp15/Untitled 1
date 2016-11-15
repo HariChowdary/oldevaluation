@@ -1,0 +1,51 @@
+ private void createPDF(Bitmap photo) {
+               // TODO Auto-generated method stub
+               Document doc = new Document();
+       
+               
+                try {
+                                String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/droidText";
+                                 
+                                File dir = new File(path);
+                               if(!dir.exists())
+                                       dir.mkdirs();
+
+                          // Log.d("PDFCreator", "PDF Path: " + path);
+                           
+              
+                      File file = new File(dir, "sample.pdf");
+                      
+                           FileOutputStream fOut = new FileOutputStream(file);
+   
+                               PdfWriter.getInstance(doc, fOut);
+               
+              //open the document
+              doc.open();
+              
+            
+             InputStream ims = getAssets().open("photo");
+             Toast.makeText(MainActivity.this, "iiiiiiiiii"+ims, 1000).show();
+              Bitmap bmp = BitmapFactory.decodeStream(ims);
+             
+               ByteArrayOutputStream stream = new ByteArrayOutputStream();
+               //Bitmap bitmap = BitmapFactory.decodeResource(getBaseContext().getResources(), R.drawable.android);
+               photo.compress(Bitmap.CompressFormat.JPEG, 100 , stream);
+               Image myImg = Image.getInstance(stream.toByteArray());
+               myImg.setAlignment(Image.MIDDLE);
+                 //add image to document
+               doc.add(myImg);
+               
+              
+               //set footer
+                
+       } catch (DocumentException de) {
+               Log.e("PDFCreator", "DocumentException:" + de);
+       } catch (IOException e) {
+               Log.e("PDFCreator", "ioException:" + e);
+       } 
+                finally
+       {
+               doc.close();
+       }
+     
+       }

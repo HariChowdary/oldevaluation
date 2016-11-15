@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="text_size_numbers">26sp</dimen>
+    
+     <dimen name="et_margin_top">50dp</dimen>
+    <dimen name="et_width">420dp</dimen>
+    
+    <dimen name="view_width_height">30dp</dimen>
+    <dimen name="view_text_size">16sp</dimen>
+</resources>

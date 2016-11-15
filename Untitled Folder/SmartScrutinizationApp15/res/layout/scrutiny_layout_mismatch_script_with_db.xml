@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/tv_h_seatno"
+            style="@style/textview_marks_show_details_title"
+            android:layout_alignParentLeft="true"
+            android:text="Seat No :  " />
+
+        <TextView
+            android:id="@+id/tv_seat_no"
+            style="@style/textview_marks_show_details"
+            android:layout_toRightOf="@+id/tv_h_seatno"
+            android:textColor="@color/blue"
+            android:text=""
+             />
+
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+         android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+        >
+    <EditText
+        android:id="@+id/et_scanbook1"
+        style="@style/edittext_style" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_scanbook2"
+        style="@style/edittext_style" />
+
+    <EditText
+        android:id="@+id/et_scanbook3"
+        style="@style/edittext_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_margin_top"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_scanbook_clear"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btn_scanbook_submit"
+            style="@style/button_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Submit" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

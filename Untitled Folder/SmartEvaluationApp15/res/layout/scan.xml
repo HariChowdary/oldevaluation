@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_menu_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="5dp" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="90dp"
+        android:background="@android:color/white" >
+
+        <RelativeLayout
+            android:id="@+id/subandbund_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_eval_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20dip"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_batteryLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dip"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_program_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_eval_id"
+                android:layout_marginLeft="35dip"
+                android:paddingTop="20dip"
+                android:text="COURSE : "
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_programName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_eval_id"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/tv_program_title"
+                android:paddingTop="20dip"
+                android:text="Program"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/bun_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dip"
+                android:layout_marginTop="80dip"
+                android:paddingRight="10dip"
+                android:paddingTop="20dip"
+                android:text="BUNDLE :"
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_bun_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dip"
+                android:layout_toRightOf="@+id/bun_title"
+                android:paddingTop="20dip"
+                android:text="bun"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bun_title"
+                android:layout_marginLeft="35dip"
+                android:gravity="right"
+                android:paddingRight="10dip"
+                android:paddingTop="20dip"
+                android:text="SUBJECT :"
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sub_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_bun_code"
+                android:layout_toRightOf="@+id/sub_title"
+                android:paddingTop="20dip"
+                android:text="CSE"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+            
+              <TextView
+                android:id="@+id/seat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sub_title"
+                android:layout_marginLeft="35dip"
+                android:gravity="right"
+                android:paddingRight="10dip"
+                android:paddingTop="20dip"
+                android:text="SEAT NO :"
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_seatno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sub_code"
+                android:layout_toRightOf="@+id/sub_title"
+                android:paddingTop="20dip"
+                android:text="NO"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+            
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/editTextScanAnswerBook"
+            style="@style/edtStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WriteSerialNumberTextView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dip"
+            android:hint="@string/scan_answer_book"
+            android:minWidth="300dp"
+            android:maxLength="11"
+            android:inputType="number"
+            android:password="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/WriteSerialNumberTextView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subandbund_Layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dip"
+            android:gravity="center"
+            android:hint="Enter Book Serial Number"
+            android:maxLength="2"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            style="@style/edtStyleBlue"
+             />
+
+    
+        
+        
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextScanAnswerBook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/barcode_clear"
+                    style="@style/btnStyleBlue"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/scan_answer_book_button"
+                    style="@style/btnStyleBlue"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Submit" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_change_bundle"
+            style="@style/btnStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="Change Bundle" />
+
+        <Button
+            android:id="@+id/btn_bundle_completed"
+            style="@style/btnStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/completed"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Bundle Completed" />
+    </RelativeLayout>
+
+</RelativeLayout>

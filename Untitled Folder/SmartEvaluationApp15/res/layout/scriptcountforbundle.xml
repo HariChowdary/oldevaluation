@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/Container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="200dp"
+            android:background="@color/white" >
+
+            <RelativeLayout
+                android:id="@+id/subandbund_Layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/txt_eval_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="20dip"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/txt_batteryLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="20dip"
+                    android:text="Battery"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/tv_program_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_eval_id"
+                    android:layout_marginLeft="35dip"
+                    android:paddingTop="20dip"
+                    android:text="COURSE : "
+                    android:textColor="@color/state_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_programName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_eval_id"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@+id/tv_program_title"
+                    android:paddingTop="20dip"
+                    android:text="Program"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/bun_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dip"
+                    android:layout_marginTop="80dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="20dip"
+                    android:text="BUNDLE :"
+                    android:textColor="@color/state_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_bun_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dip"
+                    android:layout_toRightOf="@+id/bun_title"
+                    android:paddingTop="20dip"
+                    android:text="bun"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/sub_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bun_title"
+                    android:layout_marginLeft="35dip"
+                    android:layout_marginTop="20dip"
+                    android:gravity="right"
+                    android:paddingRight="10dip"
+                    android:text="SUBJECT :"
+                    android:textColor="@color/state_blue"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_sub_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_bun_code"
+                    android:layout_marginTop="20dip"
+                    android:layout_toRightOf="@+id/sub_title"
+                    android:text="CSE"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/bundleEntryLayout4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subandbund_Layout"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical"
+                android:padding="40dp"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/txt_count1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/number_of_answer_books"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/numberOfBooksPerBundleEditText"
+                    style="@style/edtStyleBlue"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/txt_count1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dip"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="true"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:paddingLeft="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" 
+                android:layout_below="@+id/bundleEntryLayout4"
+                android:layout_centerHorizontal="true" >
+
+                <Button
+                    android:id="@+id/clearButton"
+                    style="@style/btnStyleBlue"  
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dip"
+                    android:text="Clear" />
+
+                <Button
+                    android:id="@+id/nextButton"
+                    style="@style/btnStyleBlue"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="30dip"
+                    android:layout_marginRight="30dip"
+                    android:layout_toRightOf="@+id/clearButton"
+                    android:text="Continue" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

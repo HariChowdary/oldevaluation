@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="reg_Array">
+        <item>R13</item>
+        <item>R09</item>
+        <item>R07</item>
+        <item>R05</item>
+        <item>RR</item>
+    </string-array>
+<string-array name="regulation_array">
+    <item>--Select--</item>
+    <item>R13-B.Tech</item>
+    <item>R13-B.Pharm</item>
+    <item>R09-B.Tech</item>
+    <item>R09-B.Pharm</item>
+    <item>R07-B.Tech</item>
+    <item>R07-B.Pharm</item>
+    <item>R05-B.Tech</item>
+    <item>R05-B.Pharm</item>
+    <item>RR-B.Tech</item>
+    <item>RR-B.Pharm</item>
+    <item>NR-B.Tech</item>
+    <item>NR-B.Pharm</item>
+</string-array>
+</resources>

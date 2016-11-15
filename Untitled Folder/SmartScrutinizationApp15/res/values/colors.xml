@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <color name="blue">#01405b</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="Grey">#BDBDBD</color>
+    <color name="state_blue">#1760A9</color>
+    <color name="skyblue">#87CEFA</color>
+    <color name="black">#000</color>
+    <color name="light_blue2">#ADD8E6</color>
+    <color name="light_grey">#C0C0C0</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="red">#FF0000</color>
+    -->
+
+    <color name="black">@android:color/black</color>
+    <color name="white">@android:color/white</color>
+    <color name="grey">#BDBDBD</color>
+    <color name="gainsboro">#DCDCDC</color>
+    <color name="blue">#01405b</color>
+    <color name="skyblue">#87CEFA</color>
+    <color name="green">#088A08</color>
+    <color name="red">#FF0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="light_green">#336633</color>
+    <color name="light_orange">#FF6600</color>
+    <color name="light_red">#D80000</color>
+     <color name="alert_blue">#87CEFA</color>
+    
+
+</resources>

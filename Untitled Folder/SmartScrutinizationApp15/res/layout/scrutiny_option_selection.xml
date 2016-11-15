@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txt_batteryLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:paddingRight="20dip"
+        android:text="Charging"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp" >
+
+        <TextView
+            android:id="@+id/tv_h_seatno"
+            style="@style/textview_marks_show_details_title"
+            android:layout_toLeftOf="@+id/tv_seat_no"
+            android:text="Seat No :  " />
+
+        <TextView
+            android:id="@+id/tv_seat_no"
+            style="@style/textview_marks_show_details"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/blue"
+            android:layout_marginRight="20dp"
+            android:text="no"
+             />
+
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+         <Button
+            android:id="@+id/btn_scrutiny"
+            style="@style/button_style"
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            
+            android:padding="10dp"
+             android:text="@string/scrutiny" />
+
+        <Button
+            android:id="@+id/btn_scrut_correction"
+            style="@style/button_style"
+            android:layout_width="400dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/scrutiny_corr"
+            />
+
+       
+    </LinearLayout>
+
+</LinearLayout>

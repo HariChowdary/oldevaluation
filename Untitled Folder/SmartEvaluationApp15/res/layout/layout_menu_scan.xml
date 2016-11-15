@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bar"
+    android:gravity="center" >
+
+    <TextView
+        android:id="@+id/tv_smart_eval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:drawableLeft="@drawable/ic_launcher"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="Smart Evaluation 1 of 40 "
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="5dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/tv_save_n_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_menu_button"
+            android:drawableTop="@drawable/savenexit"
+            android:text="Save and Exit"
+            android:textColor="@color/white" />
+
+       <!--  <TextView
+            android:id="@+id/tv_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_menu_button"
+            android:drawableTop="@drawable/completed"
+            android:text="Completed"
+            android:textColor="@color/white" /> -->
+
+        <TextView
+            android:id="@+id/tv_unread_barcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/selector_menu_button"
+            android:drawableTop="@drawable/answerbooknotread"
+            android:gravity="center_horizontal"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

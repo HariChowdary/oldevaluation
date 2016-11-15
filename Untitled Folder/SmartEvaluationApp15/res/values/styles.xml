@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- numbers button style -->
+    <style name="number_button_style">
+        <item name="android:background">@drawable/selector_no_buttons</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_numbers</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity"></item>
+    </style>
+
+    <!-- other than numbers button style -->
+    <style name="other_than_number_button_style">
+        <item name="android:background">@drawable/selector_no_buttons</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_numbers</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="textview_marks_show_heading_for_question_no">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="MyActionBarTabStyle" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/state_blue</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:actionMenuTextColor">@style/MyTheme.ActionBar.MenuTextStyle</item>
+    </style>
+
+    <style name="MyActionBar" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBarTabStyle</item>
+        <item name="android:actionBarSize">68dp</item>
+    </style>
+
+   
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="myTheme.ActionBar.Text" parent="@android:style/TextAppearance">
+        <item name="android:actionMenuTextColor">@android:color/white</item>
+    </style>
+
+    <style name="CustomTheme" parent="android:Theme">
+
+        <!-- Panel attributes -->
+        <!-- <item name="android:panelBackground">@drawable/menu_bg</item> -->
+        <item name="android:panelFullBackground">@drawable/menu_full_bg</item>
+        <!-- <item name="android:panelColorBackground">#FF0000</item> -->
+    </style>
+
+    <!-- <drawable name="menu_bg">#DDDAAA</drawable> -->
+    <drawable name="menu_full_bg">#000FFF</drawable>
+
+    <style name="textview_marks_summary_show">
+        <item name="android:background">@drawable/selector_marks_summary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="btnStyleBlue" parent="@android:style/Widget.Button">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_btn_shakespeare</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="edtStyleBlue" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/custom_edt</item>
+        <item name="android:padding">10dip</item>
+    </style>
+
+    <style name="textview_marks_summary_show_in_grey">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_summary_show_in_grey_r13_btech_q1">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="textview_marks_summary_show_in_grey_r13_btech">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+      <style name="textview_marks_summary_show_in_grey_r13_btech_flase">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+         <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="textview_gt_marks_show">
+        <item name="android:background">@drawable/selector_grand_total_buttons</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_gt_marks_show_in_grey">
+        <item name="android:background">@drawable/selector_grand_total_buttons_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_show_heading">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_show_heading_r13btech_q1">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="textview_marks_show_heading_r13btech">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">45dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="textview_marks_show_details_title">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_show_details">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_heading">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:text">00.00</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+      <style name="btn_marks_heading">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="textview_marks_heading2">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:text">00.00</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="alert_text_style">
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textScaleX">1.5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

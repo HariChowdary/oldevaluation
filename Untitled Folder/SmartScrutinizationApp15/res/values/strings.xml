@@ -1,0 +1,77 @@
+<resources>
+
+    <string name="app_name">Smart Scrutinization</string>
+    <string name="smart_corr">Smart Correction</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">SmartScrutinization</string>
+
+    <!-- <string name="app_name">JNTU</string> -->
+
+    <string name="save">Save</string>
+    <string name="submit"> Submit </string>
+    <string name="scan_answer_book">Scan Answer book</string>
+    <string name="bundle_number">Bundle Number:</string>
+    <string name="scrutiny">Scrutiny</string>
+    <string name="scrutiny_corr">Scrutiny Correction</string>
+    <string name="back_edit">Back/Edit</string>
+
+    <string name="grand_mis_match">Grand Total marks mismatch..!</string>
+    <string name="mis_match">Marks mismatch..!</string>
+    
+    <!-- dialog alert msg's -->
+    <string name="enter_evaluator_id">Enter Pancard Number</string>
+    <string name="alert_enter_less_than5">You have corrected less than 5 questions.</string>
+    <string name="enter_valid_id">Please enter valid Pan Number</string>
+    <string name="enter_valid_map_s"> Please enter a valid Pan Number OR \n Scrutiny not Assigned</string>
+     <string name="enter_valid_map1_s">Scrutiny not Assigned</string>
+     
+       <string name="enter_valid_map_c"> Please enter valid Pan Number OR \n Correction not Assigned</string>
+     <string name="enter_valid_map1_c">Correction not Assigned</string>
+    <string name="alert_dialog_ok">OK</string>
+    <string name="alert_dialog_cancel">Cancel</string>
+    <string name="alert_charge">Please put Charge for the Tablet.\n Otherwise it will shutdown in the middle of Scrutiny</string>
+    <string name="alert_scan_3_barcodes">Please Scan Barcode in 3 Text Boxes</string>
+    <string name="alert_enter_valid_barcodes">Please Enter Valid barcode.</string>
+    <string name="alert_enter_single_barcode">Please Scan a Single Answer sheet for 3 times or change the Scanner </string>
+    <string name="alert_time_zone_wrong">Please change Tablet\'s Timezone to Kolkata\/GMT+5:30</string>
+   
+     <string name="alert_remarks">Please edit or put remark on red mark</string>
+   
+    <!-- new alerts by shankar -->
+
+    <string name="alert_corr_serial_no">Enter Correct Serial Number</string>
+    <string name="alert_bun_already_scrutinized">This Bundle is Scrutinized Already!</string>
+    <string name="alert_enter_valid_bundle">Enter the Valid Bundle Number</string>
+    <string name="alert_network_avail">No Network is Available!</string>
+    <string name="alert_tab_date_invalid">Your Tablet Date is Invalid. Kindly Change it. \N(Go to Settings->Date &amp; Time)</string>
+    <string name="alert_barcode_not_exists_in_db">This Barcode Doesn\'t Exists In Database!</string>
+    <string name="alert_submit_scrutiny_summary">Want to Submit this Scrutinized Marks Summary ?</string>
+    <string name="alert_pend_corr">You Still have Pending Corrections</string>
+    <string name="alert_submit_corr_marks">Do You Want to Submit the Corrected Marks ?</string>
+    <string name="alert_reject_change">Are You Sure of Rejecting the Change ?</string>
+    <string name="alert_accept_change">Are You Sure of Accepting the Change ?</string>
+    <string name="alert_valid_marks">Enter Valid Marks! </string>
+    <string name="alert_update_marks">Update the New Marks!</string>
+    <string name="alert_total_exceeds">The Total of Marks Exceeds the Maximum of</string>
+    <string name="alert_unreadable">Unreadable Barcode is replaced by ##******##</string>
+    <string name="alert_barcode_unreadable">Is Your Barcode Unreadable ?</string>
+    <string name="alert_diff_serial_no">The Entered Serial Number Differs from the Original Serial Number!</string>
+    <string name="alert_serial_no_empty">Answerbook Serial Number Field Should Not Be Empty!</string>
+    <string name="alert_invalid_barcode">This Barcode is Invalid!</string>
+    <string name="alert_serial_no">Enter The AnswerBook Serial No.</string>
+    <string name="alert_incorr_ans_book_scanned">Incorrect Answer Book has been Scanned!</string>
+    <string name="alert_scan_next_sheet">This Answer Sheet is Already Scrutinized. Scan the Next!</string>
+    <string name="alert_add_new_script">Do You Want To Add a New Script ?</string>
+    <string name="alert_yes">Yes</string>
+    <string name="alert_corr_completed">All Corrections Completed</string>
+    <string name="alert_press_home">Press Home Button to pause Scrutinization</string>
+    <string name="alert_del_ans_script">Are You Sure Of Deleting the Bundle? The Values Entered for it will be Lost if Deleted.</string>
+    <string name="unable_query_exec">Unable to Execute Query</string>
+
+    <!--
+         Warning!  You are About to Delete the AnswerBook Serial No."
+							+ del_last_script_count
+							+ ". This Cannot Be Undone. ",
+    -->
+
+</resources>

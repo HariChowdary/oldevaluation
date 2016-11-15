@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_h_user_id"
+            style="@style/textview_marks_show_details_title"
+            android:layout_alignParentLeft="true"
+            android:text="User Id : " />
+
+        <TextView
+            android:id="@+id/tv_user_id"
+            style="@style/textview_marks_show_details"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_h_user_id"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_h_sub_code"
+            style="@style/textview_marks_show_details_title"
+            android:layout_toLeftOf="@+id/tv_sub_code"
+            android:text="Subject Code : " />
+
+        <TextView
+            android:id="@+id/tv_sub_code"
+            style="@style/textview_marks_show_details"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_h_bundle_no"
+            style="@style/textview_marks_show_details_title"
+            android:layout_alignParentLeft="true"
+            android:text="Bundle No : " />
+
+        <TextView
+            android:id="@+id/tv_bundle_no"
+            style="@style/textview_marks_show_details"
+            android:layout_toRightOf="@+id/tv_h_bundle_no"
+            android:textColor="@color/red" />
+
+        <TextView
+            android:id="@+id/tv_h_serial_no"
+            style="@style/textview_marks_show_details_title"
+            android:layout_toLeftOf="@+id/tv_ans_book"
+            android:text="AnswerBook_No : " />
+
+        <TextView
+            android:id="@+id/tv_ans_book"
+            style="@style/textview_marks_show_details"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/tl_main1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/marks_border_shape"
+        android:stretchColumns="*" >
+        
+        <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:stretchColumns="*"
+                >
+                <TextView
+                style="@style/textview_marks_show_heading_r13btech_q1"
+                android:text="Q.No" />
+
+                <TextView
+                    style="@style/textview_marks_show_heading_r13btech_q1"
+                    android:text="A" />
+
+                <TextView
+                    style="@style/textview_marks_show_heading_r13btech_q1"
+                    android:text="B" />
+
+                <TextView
+                    style="@style/textview_marks_show_heading_r13btech_q1"
+                    android:text="C" />
+
+                <TextView
+                    style="@style/textview_marks_show_heading_r13btech_q1"
+                    android:text="D" />
+                
+                <TextView
+                    style="@style/textview_marks_show_heading_r13btech_q1"
+                    android:text="E" />
+                
+                <TextView
+                    android:id="@+id/total"
+                style="@style/textview_marks_show_heading_r13btech_q1"
+                android:text="Total" />
+
+                            </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="1" />
+
+            <EditText
+                android:id="@+id/q1_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q1_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q1_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q1_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+           
+            <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q1_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="2" />
+
+            <EditText
+                android:id="@+id/q2_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q2_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q2_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q2_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+            
+            <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q2_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="3" />
+
+            <EditText
+                android:id="@+id/q3_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q3_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q3_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q3_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+           
+            <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q3_total"
+                style="@style/textview_marks_show_heading_r13btech"
+               />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="4" />
+
+            <EditText
+                android:id="@+id/q4_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q4_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q4_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q4_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+            
+            <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q4_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="5" />
+
+            <EditText
+                android:id="@+id/q5_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q5_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q5_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q5_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            
+             <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+             
+            <EditText
+                android:id="@+id/q5_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+            
+            
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="6" />
+
+            <EditText
+                android:id="@+id/q6_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q6_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q6_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q6_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+            
+             <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q6_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="7" />
+
+            <EditText
+                android:id="@+id/q7_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q7_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q7_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q7_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+            
+             <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q7_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" >
+
+            <TextView
+                style="@style/textview_marks_show_heading_r13btech"
+                android:text="8" />
+
+            <EditText
+                android:id="@+id/q8_a"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q8_b"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q8_c"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+
+            <EditText
+                android:id="@+id/q8_d"
+                style="@style/textview_marks_summary_show_in_grey_r13_btech" />
+            
+             <EditText
+                style="@style/textview_marks_summary_show_in_grey_r13_btech_flase" />
+
+            <EditText
+                android:id="@+id/q8_total"
+                style="@style/textview_marks_show_heading_r13btech" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="right" >
+
+        <TextView
+            android:id="@+id/txt_grand_total"
+            style="@style/textview_marks_show_heading"
+            android:text="Grand Total" />
+
+        <EditText
+            android:id="@+id/grand_total"
+            style="@style/textview_marks_summary_show" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_submit1"
+            style="@style/btnStyleBlue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Submit" />
+    </LinearLayout>
+
+</LinearLayout>

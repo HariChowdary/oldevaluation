@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel_lay_menu_bundle_entry"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/subandbund_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txt_eval_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="20dip"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txt_batteryLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="20dip"
+                android:text="Battery"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_program_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_eval_id"
+                android:layout_marginLeft="10dip"
+                android:paddingTop="20dip"
+                android:text="COURSE : "
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_programName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_eval_id"
+                android:layout_marginLeft="5dip"
+                android:layout_toRightOf="@+id/tv_program_title"
+                android:paddingTop="20dip"
+                android:text="Program"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tv_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txt_programName"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dip"
+                android:text="SUBJECT :"
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_sub_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_programName"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/tv_sub_title"
+                android:text="Code"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+            
+            <TextView
+                android:id="@+id/tv_seatno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_sub_title"
+                android:layout_marginLeft="10dip"
+                android:layout_marginTop="20dip"
+                android:text="SEAT NO :"
+                android:textColor="@color/state_blue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/seatno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sub_title"
+                android:layout_marginLeft="5dip"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@+id/tv_sub_title"
+                android:text="seat no"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dip" >
+
+            <RelativeLayout
+                android:id="@+id/bundleEntryLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subandbund_Layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dip" >
+
+            <ImageView
+                android:id="@+id/loginImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/barcode" />
+
+            <EditText
+                android:id="@+id/editTextScanBundelNumber"
+                style="@style/edtStyleBlue"
+                android:layout_below="@+id/loginImageView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:maxLength="12"
+                android:hint="@string/scan_bundle_number"
+                android:inputType="textCapCharacters"
+                android:minWidth="400dp" >
+                <requestFocus />
+            </EditText>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/Bundle_clear"
+                style="@style/btnStyleBlue"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Clear"
+                android:textColor="#FFF"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/scanBundleNumberButton"
+                style="@style/btnStyleBlue"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Submit"
+                android:textColor="#FFF"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_change_sub_code"
+            style="@style/btnStyleBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_buttons"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/change_subject"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Change Subject"
+            android:textColor="#FFF"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

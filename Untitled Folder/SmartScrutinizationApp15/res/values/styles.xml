@@ -1,0 +1,438 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="edittext_style">
+        <item name="android:layout_width">@dimen/et_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:background">@drawable/txt_field</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:inputType">numberPassword</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:hint">@string/scan_answer_book</item>
+        <item name="android:layout_marginTop">@dimen/margin_top</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+    
+     <style name="btnStyleBlue" parent="@android:style/Widget.Button">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#000000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.6</item>
+        <item name="android:background">@drawable/custom_btn_shakespeare</item>
+        <item name="android:padding">10dip</item>
+    </style>
+ <style name="btn_marks_heading">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:layout_width">102dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:visibility">invisible</item>
+    </style>
+    <style name="edittext_style2">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:background">@drawable/txt_field</item>
+        <item name="android:maxLength">11</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+    </style>
+
+    <!-- color view style -->
+    <style name="view_style">
+        <item name="android:layout_width">@dimen/view_width_height</item>
+        <item name="android:layout_height">@dimen/view_width_height</item>
+    </style>
+
+    <!-- color view text style -->
+    <style name="view_textview_style">
+        <item name="android:textSize">@dimen/view_text_size</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="alert_text_style">
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:textScaleX">1.5</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MyActionBarTabStyle" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@drawable/actionbar</item>
+        <item name="android:titleTextStyle">@style/MyTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:actionMenuTextColor">@style/MyTheme.ActionBar.MenuTextStyle</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.MenuTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Menu">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyTheme.ActionBar.TitleTextStyle" parent="android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyActionBar" parent="android:style/Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/MyActionBarTabStyle</item>
+        <item name="android:actionBarSize">68dp</item>
+    </style>
+
+    <style name="button_style">
+        <item name="android:background">@drawable/selector_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- numbers button style -->
+    <style name="number_button_style">
+        <item name="android:background">@drawable/selector_no_buttons</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_numbers</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">35dp</item>
+        <item name="android:paddingRight">35dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity"></item>
+    </style>
+
+    <!-- other than numbers button style -->
+    <style name="other_than_number_button_style">
+        <item name="android:background">@drawable/selector_no_buttons</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_numbers</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">25dp</item>
+        <item name="android:paddingRight">25dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="header_textview_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="textview_style">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
+
+    <style name="textview_marks_summary_show_in_grey_r13_btech_q1">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+<style name="textview_marks_summary_show_focus">
+        <item name="android:background">@drawable/selector_marks_summary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+<style name="textview_marks_summary_show_focus_ground">
+        <item name="android:background">@drawable/selector_marks_summary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">120dp</item>
+          <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+    </style>
+
+    <style name="textview_marks_summary_show_in_grey_r13_btech">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">55dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    
+     <style name="textview_marks_summary_show_in_grey_r13_btech11">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    
+    
+     <style name="textview_marks_summary_show_in_grey_r13_btech_size">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    
+  <style name="textview_marks_summary_show_in_grey_r13_btech_focus">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">62dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+    </style>
+    <style name="textview_marks_show_heading_r13btech_q1">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">50dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">55dp</item>
+    </style>
+
+    <style name="textview_marks_show_heading_r13btech">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">45dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">55dp</item>
+    </style>
+
+      <style name="textview_marks_show_heading_r13btech1">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">45dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+    
+    <style name="textview_marks_summary_show1">
+        <item name="android:background">@drawable/selector_marks_summary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="textview_marks_summary_show12">
+        <item name="android:background">@drawable/selector_marks_summary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">120dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">61dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    <style name="textview_marks_summary_show">
+        <item name="android:background">@drawable/selector_marks_summary</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">70dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+    
+    <style name="textview_marks_summary_show_in_grey">
+        <item name="android:background">@drawable/selector_marks_summary_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">5</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="textview_marks_show_heading">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="textview_marks_show_heading_for_question_no">
+        <item name="android:background">@drawable/cell_shape</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:focusable">false</item>
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="textview_marks_show_details_title">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_show_details">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_marks_heading">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:text">00.00</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_gt_marks_show_in_grey">
+        <item name="android:background">@drawable/selector_grand_total_buttons_in_grey</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textview_gt_marks_show">
+        <item name="android:background">@drawable/selector_grand_total_buttons</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:minWidth">90dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

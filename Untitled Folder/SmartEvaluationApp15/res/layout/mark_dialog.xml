@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            style="@style/textview_marks_show_details_title"
+            android:text="Eval ID : " />
+
+        <TextView
+            android:id="@+id/tv_eval_id"
+            style="@style/textview_marks_show_details"
+            android:text="Id" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/textview_marks_show_details_title"
+            android:text="Subject Code : " />
+
+        <TextView
+            android:id="@+id/tv_sub_code"
+            style="@style/textview_marks_show_details"
+            android:text="Code" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/textview_marks_show_details_title"
+            android:text="Bundle No : " />
+
+        <TextView
+            android:id="@+id/tv_bundle_no"
+            style="@style/textview_marks_show_details" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            style="@style/textview_marks_show_details_title"
+            android:text="Answer Book Serial No. : " />
+
+        <TextView
+            android:id="@+id/tv_ans_book"
+            style="@style/textview_marks_show_details" />
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/marks_border_shape"
+        android:gravity="center" >
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView style="@style/textview_marks_summary_show" />
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="A" />
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="B" />
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="C" />
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="D" />
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Total" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.1" />
+
+            <TextView
+                android:id="@+id/q1_a"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q1_b"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q1_c"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q1_d"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q1_total"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.2" />
+
+            <TextView
+                android:id="@+id/q2_a"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q2_b"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q2_c"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q2_d"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q2_total"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.3" />
+
+            <TextView
+                android:id="@+id/q3_a"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q3_b"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q3_c"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q3_d"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q3_total"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.4" />
+
+            <TextView
+                android:id="@+id/q4_a"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q4_b"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q4_c"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q4_d"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q4_total"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.5" />
+
+            <TextView
+                android:id="@+id/q5_a"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q5_b"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q5_c"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q5_d"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q5_total"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.6" />
+
+            <TextView
+                android:id="@+id/q6_a"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q6_b"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q6_c"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q6_d"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q6_total"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.7" />
+
+            <TextView
+                android:id="@+id/q7_a"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q7_b"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q7_c"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q7_d"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q7_total"
+                style="@style/textview_marks_summary_show_in_grey"
+                android:text="00.00" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/textview_marks_show_heading"
+                android:text="Q.8" />
+
+            <TextView
+                android:id="@+id/q8_a"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q8_b"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q8_c"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q8_d"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+
+            <TextView
+                android:id="@+id/q8_total"
+                style="@style/textview_marks_summary_show"
+                android:text="00.00" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="right" >
+
+        <TextView
+            style="@style/textview_marks_show_heading"
+            android:text="Grand Total" />
+
+        <TextView
+            android:id="@+id/grand_total"
+            style="@style/textview_marks_summary_show"
+            android:text="00.00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/back_markdialog"
+            style="@style/btnStyleBlue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dip" />
+
+        <Button
+            android:id="@+id/sbt_markdialog"
+            style="@style/btnStyleBlue"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</TableLayout>

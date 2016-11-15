@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/et_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Enter IP Address"
+        android:minWidth="250dp"
+        android:padding="10dp"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btn_update_ip_address"
+        style="@style/button_style"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_button"
+        android:text="Update IP Address" />
+
+    <Button
+        android:id="@+id/btn_scrutiny"
+        style="@style/button_style"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dip"
+        android:text="Scrutiny" />
+
+    <Button
+        android:id="@+id/btn_scrutiny_correction"
+        style="@style/button_style"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="Scrutiny Correction" />
+
+    <Button
+        android:id="@+id/btn_showimei"
+        style="@style/button_style"
+        android:layout_width="250dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="Show IMEI" />
+
+    <TextView
+        android:id="@+id/tv_imei_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_sync_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:textSize="@dimen/text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>
